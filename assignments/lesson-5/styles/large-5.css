@@ -1,0 +1,196 @@
+@media only screen and (min-width: 64em) {
+    
+    /*1024px*/
+    
+    header {
+        
+        background-color: #71C1FF;
+        overflow: auto;
+                
+    }
+    
+    header h1 {
+        
+        color: #004B85;
+        padding-top: 20px;
+        margin-top: 50px;
+        line-height: 1px;
+                
+    }
+    
+    header img {
+        
+        padding: 10px 10px 10px 10px;
+        margin-right: 20px;
+        float: left;
+                
+    }
+    
+    header .subheading {
+        
+        color: #004B85;
+        line-height: 1px;
+                
+    }
+    
+    nav {}      
+    nav button {display: none;}
+    nav ul {
+    
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000000;
+    
+    }
+    nav ul li {
+    
+        float: left;
+        padding: 8px;
+    }
+    nav ul li a {
+    
+        display: block;
+        padding: 8px;
+        text-decoration: none;
+        color: #ffffff;
+        border-right: 1px solid #bbb;
+    
+    }
+    nav ul li.active a {}
+    nav ul li a:hover {}
+    
+    main {
+        
+        background-color: #004B85;
+    }
+    
+    main h2 {
+        
+        text-align: center;
+        color: #ffffff;       
+        
+    }
+    
+    main figure {
+        
+        margin: 0 0 0 0;
+        width:100%;
+    
+    }
+    
+    main figure img {
+        
+        width: 100%;
+        height: 260px;
+    
+    }
+    
+    .weather-summary {
+        
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        
+    }
+    
+    .current, .highlow, .conditions {
+        
+        width: 33%;
+        text-align: center;
+        color: #ffffff;
+        font-size: 20px;
+        background-color: #cf7600;
+        
+    }
+    
+    .current {
+        
+        display: flex;
+        flex-flow: row-reverse wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .current h4 {
+        
+        padding-left: 15px;
+        
+    }
+    
+    .forecast h3 {
+        
+        text-align: center;
+        border: 1px solid black;
+        background-color: darkgray;
+        margin-bottom: 0px;
+        
+    }
+    
+    .forecast table {
+        
+        border-collapse: collapse;
+        margin: auto;
+        width: 100%;
+        
+    }
+    
+    .forecast table thead tr th, .forecast table tbody tr td {
+        
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+        background-color: lightgray;
+        
+    }
+    
+    article h3 {
+        
+        text-align: center;
+        color: #71C1FF;
+        font-size: 20px;
+        
+    }
+    
+    article img {
+        
+        float: right;
+        width: 40%;
+        margin: 0px 20px 20px 20px;
+        
+    }
+    
+    article .town-article {
+        
+        margin: 0px 20px 20px 20px;
+        color: #71C1FF;
+        
+    }
+    
+    article {
+        
+        overflow: auto; 
+        
+    }
+       
+    footer {
+        
+        position: static;
+        text-align: center;
+        background-color: #000000;
+        color: #ffffff;
+        padding-top: 10px;
+        
+    }
+    
+    footer .footer-bar {
+        
+        background-color: #000000;
+        color: #ffffff;
+        padding-top: 10px;
+        
+    }
+    
+}

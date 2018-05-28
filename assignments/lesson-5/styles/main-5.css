@@ -8,8 +8,9 @@ body {
   font-family: 'Muli', 'Montserrat', sans-serif;  /* Declare the base font-family */
 }
 
-header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: 64em; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */\
+    max-width: 64em; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    margin: auto;
 }
 
 header {

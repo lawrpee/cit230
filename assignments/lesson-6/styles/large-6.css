@@ -99,12 +99,14 @@
         display: block;
         margin: auto;
         width: 50%;
+        margin-top: 10px;
+        margin-bottom: 20px;
         
     }
     
     .current picture img {
         
-        width: 50%;
+        width: 45%;
                 
     }
     

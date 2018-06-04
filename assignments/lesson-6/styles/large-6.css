@@ -2,38 +2,7 @@
     
     /*1024px*/
     
-    header {
-        
-        background-color: #71C1FF;
-        overflow: auto;
-                
-    }
-    
-    header h1 {
-        
-        color: #004B85;
-        padding-top: 20px;
-        margin-top: 50px;
-        line-height: 1px;
-                
-    }
-    
-    header img {
-        
-        padding: 10px 10px 10px 10px;
-        margin-right: 20px;
-        float: left;
-                
-    }
-    
-    header .subheading {
-        
-        color: #004B85;
-        line-height: 1px;
-                
-    }
-    
-    nav {}      
+    /*nav {}   */   
     nav button {display: none;}
     nav ul {
     
@@ -127,8 +96,16 @@
     
     .current h4 {
         
-        padding-left: 15px;
+        display: block;
+        margin: auto;
+        width: 50%;
         
+    }
+    
+    .current picture img {
+        
+        width: 50%;
+                
     }
     
     .forecast h3 {

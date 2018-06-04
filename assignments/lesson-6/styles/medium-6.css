@@ -3,39 +3,8 @@
     /*600px*/
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
-        
-    header {
-        
-        background-color: #71C1FF;
-        overflow: auto;
-                
-    }
     
-    header h1 {
-        
-        color: #004B85;
-        padding-top: 20px;
-        margin-top: 50px;
-        line-height: 1px;
-                
-    }
-    
-    header img {
-        
-        padding: 10px 10px 10px 10px;
-        margin-right: 20px;
-        float: left;
-                
-    }
-    
-    header .subheading {
-        
-        color: #004B85;
-        line-height: 1px;
-                
-    }
-    
-    nav {}
+    /*nav {}*/
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
     
     nav ul {
@@ -86,6 +55,7 @@
         
         margin: 0 0 0 0;
         width: 48%;
+        height: 200px;
         float: left;
     
     }
@@ -95,6 +65,7 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        min-height: 200px;
         max-height: 200px;
         
     }
@@ -121,7 +92,14 @@
     
     .current h4 {
         
-        padding-left: 15px;
+        padding-left: 5px;
+        margin-left: 5px;
+        
+    }
+    
+    .current picture img {
+        
+        width: 50%;
         
     }
     

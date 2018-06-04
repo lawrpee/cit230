@@ -23,23 +23,26 @@ header h1 {
     
     color: #004B85;
     padding-top: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
     line-height: 1px;
     
 }
 
 header figure.logo {
     
-    padding: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    margin-left: 10px;
     margin-right: 10px;
     float: left;
     
 }
 
-header .subheading {
+header .sub-heading {
     
     color: #004B85;
-    line-height: 1px;
+    line-height: 5px;
+    margin-left: 120px;
+    
     
 }
 
@@ -193,6 +196,12 @@ main {
     .current h4 {
         
         padding-left: 15px;
+        
+    }
+    
+    .current picture img {
+        
+        width: 65%;
         
     }
     

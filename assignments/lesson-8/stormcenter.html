@@ -41,6 +41,47 @@
         <script src="scripts/hamburger.js"></script>
         
         <main>
+            <h1>Weather Report Form</h1>
+            <form id="weatherReportForm" method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Reporter Information</legend>
+                    <label class="top">Full Name* <input type="text" name="fullName" required pattern="([A-Za-z\s]+){5,}" title="Please use alpha characters only with a minimum of five characters"></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="top">Phone Number* <input type="tel" name="phone" required></label>
+                    <label class="top">Zip Code* <input type="number" name="zipCode" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Profile</legend>
+                    <label class="top">Storm Date <input type="date" name="date"></label>
+                    <label class="top">Storm Type <input list="stormType" name="stormType"><datalist id="stormType">
+                        <option>Flash Flood</option>
+                        <option>Hail</option>
+                        <option>Hurricane</option>
+                        <option>Thunderstorm</option>
+                        <option>Tornado</option>
+                        </datalist>
+                    </label>
+                    <div id="storm-severity-rating">
+                    <label class="slider" for="rating">Storm Severity<br><span id="slider-value">1</span><input id="rating" type="range" name="stormSeverity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="slider-value">10</span></label>
+                    <span id="ratingValue">5</span></div>
+                    <!--JS for slider rating-->
+        <script src="scripts/form-slider.js"></script>
+                    <label class="top">Storm Region
+                        <select name="region">
+                            <option value="" selected disabled>Select Region</option>
+                            <option value="franklin">Franklin</option>
+                            <option value="greenville">Greenville</option>
+                            <option value="springfield">Springfield</option>
+                        </select>
+                    </label>
+                    <div>User In-danger Level</div>
+                    <label class="sbs"><input type="radio" name="dangerLevel" value="yes">Yes</label>
+                    <label class="sbs"><input type="radio" name="dangerLevel" value="no">No</label>
+                    <label class="sbs"><input type="radio" name="dangerLevel" value="maybe">Maybe</label>
+                    <textarea class="form-txt-area" name="comment" form="weatherReportForm">Enter comments here...</textarea>
+                </fieldset>
+                <input type="submit" value="Report Weather Event"  class="submitBtn">
+            </form>
         </main>
         <footer>
             <section class="contact">

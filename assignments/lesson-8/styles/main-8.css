@@ -301,7 +301,7 @@ form div.storm-severity-rating {
 
 form div.slider-element {
     width: 8%;
-    font-size: em;
+    font-size: .5rem;
     align-self: center;
     padding: 0.5rem;
 }
@@ -362,6 +362,9 @@ form label.top input:required:valid {
 
 main h1, main p {
     color: #71C1FF;
+    margin: 0rem 2%;
+    padding: 1rem 0;
+}
 
 /*---------------------FOOTER---------------------*/
 
@@ -376,5 +379,5 @@ footer {
 footer .footer-bar {        
     background-color: #000000;
     color: #ffffff;
-    padding-top: 10px;        
-    }
+    padding-top: 10px;
+}

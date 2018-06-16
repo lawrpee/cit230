@@ -117,6 +117,9 @@
         grid-gap: 10px;
     }
     
+    .gallery-grid .weather-gallery img:hover {
+    box-shadow: 5px 5px 5px #CF7600;
+    
 /*---------------------FOOTER---------------------*/
        
     footer {        

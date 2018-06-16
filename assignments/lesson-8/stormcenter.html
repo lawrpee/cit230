@@ -60,10 +60,13 @@
                         <option>Thunderstorm</option>
                         <option>Tornado</option>
                         </datalist>
+                    </label>                    
+                    <label class="top" for="rating">Storm Severity
+                        <div class="storm-severity-rating">
+                        <div class="slider-element">1</div><input id="rating" type="range" name="stormSeverity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><div class="slider-element">10</div><div class="slider-element" id="ratingValue">5</div>
+                        </div>
                     </label>
-                    <div id="storm-severity-rating">
-                    <label class="slider" for="rating">Storm Severity<br><span id="slider-value">1</span><input id="rating" type="range" name="stormSeverity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="slider-value">10</span></label>
-                    <span id="ratingValue">5</span></div>
+                    
                     <!--JS for slider rating-->
         <script src="scripts/form-slider.js"></script>
                     <label class="top">Storm Region

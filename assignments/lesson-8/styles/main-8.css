@@ -239,9 +239,9 @@ main {
     font-size: 0.75em;
 }
 
-.gallery-grid .weather-gallery img:hover {
+/*.gallery-grid .weather-gallery img:hover {
     box-shadow: 5px 5px 5px #CF7600;
-}
+}*/
 
 .gallery-grid .weather-gallery img {
     border-radius: 10px 10px;
@@ -251,6 +251,12 @@ main {
 }
 
 /*----------------MAIN STORM CENTER---------------*/
+
+main h1 {
+    color: #71C1FF;
+    margin: 0rem 2%;
+    padding: 1rem 0;
+}
 
 form fieldset {
     border: 1px solid lightgray;
@@ -286,30 +292,35 @@ form label.top input, form label.top select {
     max-width: 20rem;
 }
 
-form div#storm-severity-rating {
+form div.storm-severity-rating {
     display: flex;
+    width: 100%;
+    max-width: 20rem;
+    padding-top: 0;
 }
 
-form label.slider {
-    /*display: block;
-    padding-top: 1rem;
-    font-size: 0.8rem;*/
+form div.slider-element {
+    width: 8%;
+    font-size: em;
+    align-self: center;
+    padding: 0.5rem;
 }
 
-form label.slider span#slider-value {
-    /*font-size: 1.25rem;*/
+form input#rating {
+    padding: 0;
+    width: 68%;
 }
 
-form span#ratingValue {
-    /*font-size: 1.25rem;*/
-}
-
-form label.slider input {
-    /*width: 80%;
-    max-width: 17.5rem;
-    font-size: 1rem;
-    padding: 0.75rem;*/
-    
+form div#ratingValue {
+    margin-left: 0.5rem;
+    color: #CF7600;
+    background-color: white;
+    border-radius: 20px;
+    width: 14%;
+    text-align: center;
+    padding: 0.5rem 0;
+    border: 1px solid #CF7600;
+    font-size: 1.5rem;
 }
 
 form label.sbs {
@@ -321,6 +332,7 @@ form textarea.form-txt-area {
     display: block;
     width: 100%;
     max-width: 20rem;
+    height: 7.5rem;
     border-radius: 4px;
     padding: 0.75rem;
     margin-top: 1rem;
@@ -345,6 +357,11 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
+
+/*---------------------THANKS---------------------*/
+
+main h1, main p {
+    color: #71C1FF;
 
 /*---------------------FOOTER---------------------*/
 

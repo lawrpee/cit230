@@ -14,14 +14,15 @@
         display: block;
         margin: auto;
         text-align: center;
-        color: #ffffff;        
+        color: #71C1FF;
+        font-size: 2em;       
     }
     
     .weather-image img {        
         margin: 0 0 0 0;
-        width: 48%;
-        min-height: 300px;
-        max-height: 300px;
+        width: 60%;
+        min-height: 325px;
+        max-height: 325px;
         float: left;    
     }
     
@@ -29,29 +30,41 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        min-height: 300px;
-        max-height: 300px;        
     }
     
-    .current, .highlow, .conditions, .windchill {        
+@media only screen and (max-width: 37.5em) {
+        .weather-summary {
+        min-height: 325px;
+        max-height: 325px 
+    }
+    }
+    
+    .current, .highlow, .conditions, .windchill {
         width: 100%;
+        border: 3px solid white;
+        padding: 0.5rem;
+        background-color: #cf7600;
+    }
+    
+    .highlow p, .conditions p, .windchill p {
         text-align: center;
-        line-height: 1px;
-        color: #ffffff;
-        font-size: 16px;
-        background-color: #cf7600;        
+        line-height: 0.25px;
+        color: #fff;
+        font-size: 1.2em;
     }
     
     .current {        
         display: flex;
         flex-flow: row-reverse wrap-reverse;
         justify-content: center;
-        align-items: center;        
+        align-items: flex-start;
     }
     
-    .current h4 {        
-        padding-left: 5px;
-        margin-left: 5px;        
+    .current h4 {
+        font-size: 1.5em;
+        color: #fff;
+        margin: 0;
+        align-self: center;
     }
     
     .current picture img {        

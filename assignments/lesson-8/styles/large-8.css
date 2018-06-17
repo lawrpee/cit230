@@ -11,12 +11,13 @@
     .weather-image {               
         display: flex;
         flex-flow: column-reverse wrap;
-        justify-content: center;        
+        justify-content: center;
     }
     
     .weather-image h2 {        
         text-align: center;
-        color: #ffffff;        
+        color: #ffffff;
+        padding: 0.5em;
     }
     
     .weather-image img {    
@@ -30,7 +31,7 @@
         flex-flow: row wrap;
         justify-content: center;
         align-content: center;
-        margin: 10px 10px 10px 10px;        
+        margin: 10px 10px 10px 10px;
     }
     
     .current, .highlow, .conditions, .windchill {        
@@ -40,7 +41,7 @@
         text-align: center;
         line-height: 0.75em;
         color: #ffffff;
-        font-size: 1.25em;
+        font-size: 1em;
         background-color: #cf7600;        
     }
     

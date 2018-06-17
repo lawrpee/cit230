@@ -140,7 +140,8 @@ main {
     .weather-image h2 {        
         text-align: center;
         color: #71C1FF;
-        font-size: 2.25rem;
+        font-size: 2em;
+        margin: 0.75rem;
     }
     
     .weather-image img {
@@ -157,16 +158,12 @@ main {
     .current, .highlow, .conditions, .windchill {
         border: 5px solid white;
         padding: 0.5rem;
-        text-align: center;
-        line-height: .25em;
-        color: #fff;
-        font-size: 1.2em;
-        background-color: #cf7600;        
+        background-color: #cf7600;
     }
     
     .highlow p, .conditions p, .windchill p {
         text-align: center;
-        line-height: .25em;
+        line-height: 0.25em;
         color: #fff;
         font-size: 1.2em;
     }
@@ -180,6 +177,7 @@ main {
     
     .current h4 {
         font-size: 1.5em;
+        color: #fff;
     }
     
     .current picture img {        

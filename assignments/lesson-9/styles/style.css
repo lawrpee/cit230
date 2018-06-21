@@ -1,0 +1,73 @@
+/* || general styles */
+
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+body {
+  max-width: 64em;
+  margin: auto;
+}
+
+h1, h2 {
+  font-family: 'Monoton', cursive;
+}
+
+/* header styles */
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* section styles */
+
+section.hero-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section.hero-list article {
+    width: 100%;
+    padding: 1.5rem;
+    margin: 1rem;
+    border: 2px solid #001db2;
+    border-radius: 15px 15px;
+    background-color: #ffc100;
+}
+
+/*spreads on medium to large screen*/
+@media only screen and (min-width: 37.5em) {
+    section.hero-list {
+        flex-flow: row nowrap;
+    }
+    
+    section.hero-list article {
+    width: 33%;
+    }
+}
+
+section.hero-list p {
+    color: #000;
+    margin: 0.25rem 0;
+    padding: 0.25rem 0;
+}
+
+section.hero-list ul {
+    list-style-type: square;
+    margin-top: 0;
+    color: #000;
+}
+
+section.hero-list h2 {
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+    margin-bottom: 0.5rem;
+    color: #000;
+}

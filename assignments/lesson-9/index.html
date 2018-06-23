@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        <meta name="description" content="Home page for the Weather Watch site">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main-9.css">
+        <link rel="stylesheet" href="styles/medium-9.css">
+        <link rel="stylesheet" href="styles/large-9.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat%7CMuli" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <header class="site-header">
+            <picture class="logo">
+                <img src="images/logo0.png" alt="header-logo"
+                     srcset="images/logo1.png 1x,
+                             images/logo2.png 2x,
+                             images/logo3.png 3x">
+            </picture>
+            <div class="headings">
+                <h1>Weather Watch</h1>
+                <h4>your safety is our PRIORITY</h4>
+            </div>
+        </header>
+        <nav class="topnav" id="myTopnav">
+                <a href="/assignments/lesson-9/index.html" class="childnav">Home</a>
+                <a href="/assignments/lesson-9/franklin-8.html" class="childnav">Franklin</a>
+                <a href="#" class="childnav">Greenville</a>
+                <a href="#" class="childnav">Springfield</a>
+                <a href="/assignments/lesson-9/stormcenter.html" class="childnav">Storm Center</a>
+                <a href="/assignments/lesson-9/gallery-8.html" class="childnav">Gallery</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+        </nav>
+        
+        <!--JS for to toggle the hamburger button-->
+        <script src="scripts/hamburger.js"></script>
+        
+        <main>
+            <section class="weather-story">
+                <h1>Weather Story</h1>
+                <p>An mei malis liber ancillae. Has eu phaedrum necessitatibus. Virtute mnesarchum argumentum et mea. Ut agam mnesarchum nam. Ex alterum nominati duo, oratio omnesque apeirian cu vis. Cum melius meliore at.</p>
+                <!--placeholder image. change after succesful test-->
+                <figure>
+                    <img src="images/sunny-weather-opt.jpg" alt="sunny-weather" sizes="(max-width: 37.5em) 100vw, 50vw"
+                         srcset="images/sunny-weather-opt-200.jpg 200w,
+                                 images/sunny-weather-opt-500.jpg 500w,
+                                 images/sunny-weather-opt-800.jpg 800w,
+                                 images/sunny-weather-opt-orig.jpg 1100w">
+                </figure>
+            </section>
+            <div class="home-grid">
+                <section class="home-gallery">
+                    <figure>
+                        <img src="images/cloudy-gallery-opt.jpg" alt="cloudy-weather" sizes="(max-width: 37.5em) 100vw, 50vw"
+                             srcset="images/cloudy-gallery-opt-200.jpg 200w,
+                                     images/cloudy-gallery-opt-400.jpg 400w,
+                                     images/cloudy-gallery-opt.jpg 600w">
+                        <figcaption>
+                            <h3><span id="first-city-name"></span></h3>
+                            <p>Motto: <span id="first-city-motto"></span></p>
+                            <p>Year Founded: <span id="first-city-year-founded"></span></p>
+                            <p>Population: <span id="first-city-population"></span></p>
+                            <p>Average Rainfall: <span id="first-city-ave-rainfall"></span></p>
+                        </figcaption>
+                    </figure>                    
+                </section>
+                <section class="home-gallery">
+                    <figure>
+                        <img src="images/partial-cloudy-gallery-opt.jpg" alt="partial-cloudy" sizes="(max-width: 37.5em) 100vw, 50vw"
+                             srcset="images/partial-cloudy-gallery-opt-200.jpg 200w,
+                                     images/partial-cloudy-gallery-opt-400.jpg 400w,
+                                     images/partial-cloudy-gallery-opt.jpg 600w">
+                        <figcaption>
+                            <h3><span id="second-city-name"></span></h3>
+                            <p>Motto: <span id="second-city-motto"></span></p>
+                            <p>Year Founded: <span id="second-city-year-founded"></span></p>
+                            <p>Population: <span id="second-city-population"></span></p>
+                            <p>Average Rainfall: <span id="second-city-ave-rainfall"></span></p>
+                        </figcaption>
+                    </figure>                    
+                </section>
+                <section class="home-gallery">
+                    <figure>
+                        <img src="images/rainy-gallery-opt.jpg" alt="rainy" sizes="(max-width: 37.5em) 100vw, 50vw"
+                             srcset="images/rainy-gallery-opt-200.jpg 200w,
+                                     images/rainy-gallery-opt-400.jpg 400w,
+                                     images/rainy-gallery-opt.jpg 600w">
+                        <figcaption>
+                            <h3><span id="third-city-name"></span></h3>
+                            <p>Motto: <span id="third-city-motto"></span></p>
+                            <p>Year Founded: <span id="third-city-year-founded"></span></p>
+                            <p>Population: <span id="third-city-population"></span></p>
+                            <p>Average Rainfall: <span id="third-city-ave-rainfall"></span></p>
+                        </figcaption>
+                    </figure>                    
+                </section>
+                <script src="scripts/towndata.js"></script>
+            </div>
+        </main>
+        <footer>
+            <section class="contact">
+                <h6>Contact information placeholder<br>
+                    999.999.9999<br>
+                    123 Main St. Anytown, US 99999<br>
+                    Google Map</h6>
+            </section>
+            
+            <section class="footer-bar">
+                <h6>&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate"></span></h6>
+            </section>            
+        </footer>
+        
+        <!--JS for to currentdate-->
+        <script src="scripts/currentdate.js"></script>
+        
+    </body>
+</html>

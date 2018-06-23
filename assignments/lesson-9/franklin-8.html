@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin City</title>
+    <meta name="description" content="Franklin city page for the Weather Watch site">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-9.css">
+    <link rel="stylesheet" href="styles/medium-9.css">
+    <link rel="stylesheet" href="styles/large-9.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CMuli" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/windchill.js"></script>
+    
+</head>
+    
+<body onload="windchillCompute()">
+
+  <header class="site-header">
+      
+      <picture class="logo">
+          
+          <img src="images/logo0.png" alt="header-logo"
+               srcset="images/logo1.png 1x,
+                       images/logo2.png 2x,
+                       images/logo3.png 3x">
+      
+      </picture>
+      
+      <div class="headings">
+          
+          <h1>Weather Watch</h1>
+          <h4>your safety is our PRIORITY</h4>
+          
+      </div>
+      
+  </header>
+
+  <nav class="topnav" id="myTopnav">
+      <a href="/assignments/lesson-9/index.html" class="childnav">Home</a>
+      <a href="/assignments/lesson-9/franklin-8.html" class="childnav">Franklin</a>
+      <a href="#" class="childnav">Greenville</a>
+      <a href="#" class="childnav">Springfield</a>
+      <a href="/assignments/lesson-9/stormcenter.html" class="childnav">Storm Center</a>
+      <a href="/assignments/lesson-9/gallery-8.html" class="childnav">Gallery</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i></a>      
+  </nav>
+    
+<!--JS for to toggle the hamburger button-->
+<script src="scripts/hamburger.js"></script>
+    
+  <main>
+      
+      <section class="weather-image">
+          
+          <h2>Franklin</h2>
+          
+          <img src="images/sunny-weather-opt.jpg" alt="sunny-weather" sizes="(max-width: 37.5em) 100vw, 50vw"
+               srcset="images/sunny-weather-opt-200.jpg 200w,
+                       images/sunny-weather-opt-500.jpg 500w,
+                       images/sunny-weather-opt-800.jpg 800w,
+                       images/sunny-weather-opt-orig.jpg 1100w
+                       "
+               >
+
+      </section>
+      
+      <section class="weather-summary">
+          
+          <!--<h3>Weather Summary</h3>-->
+          
+          <div class="current">
+              
+              <h4 id="current-weather-description"></h4>
+              
+              <picture>                  
+                  <img id="weather-icon" src="images/sun.png" alt="sunny-symbol">              
+              </picture>
+              
+              <p>Current Temperature is <span id="current-temp"></span>&deg;F</p>
+          
+          </div>
+          
+          <div class="highlow">
+              
+              <p>High: <span id="high-temp"></span>&deg;F</p>
+              <p>Low: <span id="low-temp"></span>&deg;F</p>
+          
+          </div>
+            
+          <div class="conditions">
+              
+              <p>Precipitation: 0%</p>
+              <p>Wind Speed: <span id="wind-speed"></span> mph SW</p>
+          
+          </div>
+          
+          <div class="windchill">
+              
+              <p>Windchill: <span id="displayWindchillValue"></span>&deg;F</p>
+                    
+          </div>
+      
+      </section>
+      
+      <!--js for the current weather-->
+      <script src="scripts/weather.js"></script>
+            
+      <section class="forecast">
+          
+          <h3>Ten Day Forecast</h3>
+          
+          <table>
+              <thead>
+                  <tr>
+                      <th>Day 1</th>
+                      <th>Day 2</th>
+                      <th>Day 3</th>
+                      <th>Day 4</th>
+                      <th>Day 5</th>
+                      <th>Day 6</th>
+                      <th>Day 7</th>
+                      <th>Day 8</th>
+                      <th>Day 9</th>
+                      <th>Day 10</th>
+                  </tr>
+              </thead>
+              <tbody>  
+                  <tr>
+                      <td>89&deg;F</td>
+                      <td>87&deg;F</td>
+                      <td>78&deg;F</td>
+                      <td>75&deg;F</td>
+                      <td>72&deg;F</td>
+                      <td>72&deg;F</td>
+                      <td>79&deg;F</td>
+                      <td>83&deg;F</td>
+                      <td>85&deg;F</td>
+                      <td>89&deg;F</td>
+                  </tr>
+              </tbody>
+          </table>
+          
+      </section>
+      
+      <article>
+          
+          <h3>Franklin Breaks Record</h3>
+          
+          <img src="images/sunny-city-franklin-opt.jpg" alt="sunny-city-franklin" sizes="(max-width: 37.5em) 100vw, 50vw"
+               srcset="images/sunny-city-franklin-opt-200.jpg 200w,
+                       images/sunny-city-franklin-opt-500.jpg 500w,
+                       images/sunny-city-franklin-opt-800.jpg 800w
+                       "
+               >
+          
+          <p class="town-article">
+              
+              Lorem ipsum dolor sit amet, pro populo consequuntur te, vix adhuc semper volutpat cu. Te tollit pericula est, quo id choro appellantur. Quo eros decore torquatos eu. Ad accumsan officiis corrumpit has, usu ea veniam eirmod copiosae. Nam in odio labitur virtute. Vidit adipiscing vix cu, usu tale accommodare ut. Per ne soleat possit pertinacia. Vel cetero commune honestatis cu, no mei fuisset forensibus, per ad cetero ceteros definitiones. Vis eu perfecto laboramus, est id ullum eirmod, habeo luptatum vivendum at pro. Soluta dicunt in pri, graeci temporibus vis ne. Sit clita lobortis recteque te, qui delenit corrumpit ad.
+          
+          </p>
+      
+      </article>		  
+  
+  </main>
+    
+  <footer>
+      
+      <section class="contact">
+          <h6>Contact information placeholder<br>
+          999.999.9999<br>
+          123 Main St. Anytown, US 99999<br>
+              Google Map</h6>
+      </section>
+      
+      <section class="footer-bar">
+          <h6>&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate"></span></h6>
+      </section>
+      
+  </footer>
+
+  <script src="scripts/currentdate.js"></script>
+  
+</body>
+</html>

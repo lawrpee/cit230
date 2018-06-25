@@ -119,8 +119,32 @@
 
 /*-----------------------MAIN HOME-----------------------*/
     @media only screen and (max-width: 64em) {
+        .weather-story {
+            display: flex;
+            flex-direction: row;
+            padding: 2%;
+        }
+        
+        .weather-story .weather-story-heading {
+            width: 50%;
+            border: 2px solid #ffbe67;
+            border-radius: 10px 10px;
+            box-shadow: 2px 2px 15px #cf7600;
+        }
+        
         .home-grid .home-gallery figure {
-        display: flex;
+            display: flex;
+            padding: 2%;
+        }
+        
+        .home-grid .home-gallery figure figcaption {
+            border: 2px solid #ffbe67;
+            border-radius: 10px 10px;
+            box-shadow: 2px 2px 15px #cf7600;
+        }
+        
+        .home-grid .home-gallery figure.second-city-card {
+            flex-direction: row-reverse;
         }
     }   
     

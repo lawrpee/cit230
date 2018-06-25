@@ -12,11 +12,10 @@
     <link rel="stylesheet" href="styles/large-9.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat%7CMuli" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="scripts/windchill.js"></script>
     
 </head>
     
-<body onload="windchillCompute()">
+<body>
 
   <header class="site-header">
       
@@ -74,13 +73,13 @@
           
           <div class="current">
               
-              <h4 id="current-weather-description"></h4>
+              <h3 id="current-weather-description"></h3>
               
               <picture>                  
                   <img id="weather-icon" src="images/sun.png" alt="sunny-symbol">              
               </picture>
               
-              <p>Current Temperature is <span id="current-temp"></span>&deg;F</p>
+              <p>Current Temp: <span id="current-temp"></span>&deg;F</p>
           
           </div>
           
@@ -101,6 +100,8 @@
           <div class="windchill">
               
               <p>Windchill: <span id="displayWindchillValue"></span>&deg;F</p>
+              <!--js for windchill computation-->
+              <script src="scripts/windchill.js"></script>
                     
           </div>
       
@@ -178,6 +179,10 @@
       
       <section class="footer-bar">
           <h6>&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate"></span></h6>
+      </section>
+      
+      <section class="footer-attribution">
+          <p>The weather information is licensed under a Creative Commons Attribution-ShareALike 4.0 Generic License. It is attributed to OpenWeatherMap.</p>
       </section>
       
   </footer>

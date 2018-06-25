@@ -1,5 +1,5 @@
 /*Input: from the body tags
- *Processing: reads the body tags, calls a funstion to compute for teh average temp, and then computes for the windchill value
+ *Processing: reads the parsed JSON file and consumes it, calls a function to compute for the average temp, and then computes for the windchill value
  *Output: displays the windchill value in the specific body section
  */
 
@@ -14,11 +14,18 @@ function computeWindchillValue (aveTemp, wSpeed) {
   return windchillComp;
 }
 
-function windchillCompute() {
-  var hTemp = parseFloat(document.getElementById('high-temp').innerHTML);
-  var lTemp = parseFloat(document.getElementById('low-temp').innerHTML);
-  var wSpeed = parseFloat(document.getElementById('wind-speed').innerHTML);
-  var aveTemp = computeAveTemp(hTemp, lTemp);
-  var windchillValue = computeWindchillValue(aveTemp, wSpeed);
-  document.getElementById('displayWindchillValue').innerHTML = windchillValue.toFixed (2);
- }
+let windChillRequest = new XMLHttpRequest();
+var apiURL = '//api.openweathermap.org/data/2.5/weather?id=4156210&units=imperial&APPID=08d433d824f2b525f8146f0f5857871c';
+windChillRequest.open('GET', apiURL, true);
+windChillRequest.send();
+windChillRequest.onload =  function () {
+    let weatherData = JSON.parse(windChillRequest.responseText);
+    console.log(weatherData);
+    
+    var hTemp = weatherData.main.temp_max;
+    var lTemp = weatherData.main.temp_min;
+    var wSpeed = weatherData.wind.speed;
+    var aveTemp = computeAveTemp(hTemp, lTemp);
+    var windchillValue = computeWindchillValue(aveTemp, wSpeed);
+    document.getElementById('displayWindchillValue').innerHTML = windchillValue.toFixed (2);
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Storm Center</title>
+        <meta name="description" content="Stormcenter for the Weather Watch site">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main-9.css">
+        <link rel="stylesheet" href="styles/medium-9.css">
+        <link rel="stylesheet" href="styles/large-9.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat%7CMuli" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <header class="site-header">
+            <picture class="logo">
+                <img src="images/logo0.png" alt="header-logo"
+                     srcset="images/logo1.png 1x,
+                             images/logo2.png 2x,
+                             images/logo3.png 3x">
+            </picture>
+            <div class="headings">
+                <h1>Weather Watch</h1>
+                <h4>your safety is our PRIORITY</h4>
+            </div>
+        </header>
+        <nav class="topnav" id="myTopnav">
+                <a href="/assignments/lesson-9/index.html" class="childnav">Home</a>
+                <a href="/assignments/lesson-9/franklin-8.html" class="childnav">Franklin</a>
+                <a href="#" class="childnav">Greenville</a>
+                <a href="#" class="childnav">Springfield</a>
+                <a href="/assignments/lesson-9/stormcenter.html" class="childnav">Storm Center</a>
+                <a href="/assignments/lesson-9/gallery-8.html" class="childnav">Gallery</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+        </nav>
+        
+        <!--JS for to toggle the hamburger button-->
+        <script src="scripts/hamburger.js"></script>
+        
+        <main>
+            <h1>Weather Report Form</h1>
+            <form id="weatherReportForm" method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Reporter Information</legend>
+                    <label class="top">Full Name* <input type="text" name="fullName" required pattern="([A-Za-z\s]+){5,}" title="Please use alpha characters only with a minimum of five characters"></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="top">Phone Number* <input type="tel" name="phone" required></label>
+                    <label class="top">Zip Code* <input type="number" name="zipCode" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Profile</legend>
+                    <label class="top">Storm Date <input type="date" name="date"></label>
+                    <label class="top">Storm Type <input list="stormType" name="stormType"><datalist id="stormType">
+                        <option>Flash Flood</option>
+                        <option>Hail</option>
+                        <option>Hurricane</option>
+                        <option>Thunderstorm</option>
+                        <option>Tornado</option>
+                        </datalist>
+                    </label>                    
+                    <label class="top" for="rating">Storm Severity
+                        <div class="storm-severity-rating">
+                        <div class="slider-element">1</div><input id="rating" type="range" name="stormSeverity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><div class="slider-element">10</div><div class="slider-element" id="ratingValue">5</div>
+                        </div>
+                    </label>
+                    
+                    <!--JS for slider rating-->
+        <script src="scripts/form-slider.js"></script>
+                    <label class="top">Storm Region
+                        <select name="region">
+                            <option value="" selected disabled>Select Region</option>
+                            <option value="franklin">Franklin</option>
+                            <option value="greenville">Greenville</option>
+                            <option value="springfield">Springfield</option>
+                        </select>
+                    </label>
+                    <div>User In-danger Level</div>
+                    <label class="sbs"><input type="radio" name="dangerLevel" value="yes">Yes</label>
+                    <label class="sbs"><input type="radio" name="dangerLevel" value="no">No</label>
+                    <label class="sbs"><input type="radio" name="dangerLevel" value="maybe">Maybe</label>
+                    <textarea class="form-txt-area" name="comment" form="weatherReportForm">Enter comments here...</textarea>
+                </fieldset>
+                <input type="submit" value="Report Weather Event"  class="submitBtn">
+            </form>
+        </main>
+        <footer>
+            <section class="contact">
+                <h6>Contact information placeholder<br>
+                    999.999.9999<br>
+                    123 Main St. Anytown, US 99999<br>
+                    Google Map</h6>
+            </section>
+            
+            <section class="footer-bar">
+                <h6>&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate"></span></h6>
+            </section>
+            
+            <section class="footer-attribution">
+          <p>The weather information is licensed under a Creative Commons Attribution-ShareALike 4.0 Generic License. It is attributed to OpenWeatherMap.</p>
+            </section>
+            
+        </footer>
+        
+        <!--JS for to currentdate-->
+        <script src="scripts/currentdate.js"></script>
+        
+    </body>
+</html>

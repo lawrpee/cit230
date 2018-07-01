@@ -1,0 +1,166 @@
+@media only screen and (min-width: 64em) {
+    
+    /*1024px*/
+    
+    nav button {display: none;}
+        
+    main {        
+        background-color: #004B85;
+    }
+    
+    .weather-image {               
+        display: flex;
+        flex-flow: column-reverse wrap;
+        justify-content: center;
+    }
+    
+    .weather-image h2 {        
+        text-align: center;
+        color: #ffffff;
+        padding: 0.5em;
+    }
+    
+    .weather-image img {    
+        width: 100%;
+        display: block;
+        margin: auto;        
+    }
+    
+    .weather-summary {        
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 10px 10px 10px 10px;
+    }
+    
+    .current, .highlow, .conditions, .windchill {        
+        width: 25%;
+        max-height: 200px;
+        border: 5px solid white;
+        background-color: #cf7600;      
+    }
+    
+    .current p, .highlow p, .conditions p, .windchill p { 
+        padding: 0.5rem;
+        line-height: 1em;
+        text-align: center;
+        color: #fff;
+        font-size: 1rem;
+    }
+    
+    .current {        
+        display: flex;
+        flex-flow: row-reverse wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-end;
+    }
+    
+    .current picture img {        
+        width: 100%;
+    }
+    
+    .forecast h3 {        
+        text-align: center;
+        border: 1px solid black;
+        background-color: darkgray;
+        margin-bottom: 0px;        
+    }
+    
+    .forecast table {        
+        border-collapse: collapse;
+        margin: auto;
+        width: 100%;        
+    }
+    
+    .forecast table thead tr th, .forecast table tbody tr td {        
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+        background-color: lightgray;        
+    }
+    
+    article h3 {        
+        text-align: center;
+        color: #71C1FF;
+        font-size: 20px;        
+    }
+    
+    article img {        
+        float: right;
+        width: 40%;
+        margin: 0px 20px 20px 20px;        
+    }
+    
+    article .town-article {        
+        margin: 0px 20px 20px 20px;
+        color: #71C1FF;        
+    }
+    
+    article {        
+        overflow: auto;         
+    }
+
+/*-----------------------MAIN HOME-----------------------*/
+    
+    .weather-story {
+        display: flex;
+        flex-flow: row;
+        padding: 2%;
+    }
+    
+    .weather-story .weather-story-heading {
+        width: 50%;
+        border: 2px solid #ffbe67;
+        border-radius: 10px 10px;
+        box-shadow: 2.5px 2.5px 10px #cf7600;
+    }
+    
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin: 0 2%;
+    }
+    
+    .home-grid .home-gallery figure {
+        max-width: 100%;
+        margin: 0;
+        padding: 2%;
+        border: 2px solid #ffbe67;
+        border-radius: 10px 10px;
+        box-shadow: 2.5px 2.5px 10px #cf7600;
+    }
+    
+    .home-grid .home-gallery figure:hover {
+        background-color: #fff;
+    }
+/*---------------------MAIN GALLERY---------------------*/
+    
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    
+    .gallery-grid .weather-gallery img:hover {
+        box-shadow: 5px 5px 5px #CF7600;
+    }
+    
+/*---------------------FOOTER---------------------*/
+       
+    footer {        
+        position: static;
+        text-align: center;
+        background-color: #000000;
+        color: #ffffff;
+        padding-top: 10px;        
+    }
+    
+    footer .footer-bar {        
+        background-color: #000000;
+        color: #ffffff;
+        padding-top: 10px;        
+    }    
+}

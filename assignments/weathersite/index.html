@@ -14,25 +14,17 @@
     </head>
     
     <body>
-        <header class="site-header">
-            <picture class="logo">
-                <img src="images/logo0.png" alt="header-logo"
-                     srcset="images/logo1.png 1x,
-                             images/logo2.png 2x,
-                             images/logo3.png 3x">
-            </picture>
-            <div class="headings">
-                <h1>Weather Watch</h1>
-                <h4>your safety is our PRIORITY</h4>
-            </div>
+        
+        <header includefile="header.html">
         </header>
+            
         <nav class="topnav" id="myTopnav">
-            <a href="/index.html" class="activelink" id="home">Home</a>
-            <a href="/franklin.html" id="franklin">Franklin</a>
-            <a href="/greenville.html" id="greenville">Greenville</a>
-            <a href="/springfield.html" id="springfield">Springfield</a>
-            <a href="/stormcenter.html" id="storm">Storm Center</a>
-            <a href="/gallery.html" id="gallery">Gallery</a>
+            <a href="/assignments/weathersite/index.html" class="childnav">Home</a>
+            <a href="/assignments/weathersite/franklin.html" class="childnav">Franklin</a>
+            <a href="/assignments/weathersite/greenville.html" class="childnav">Greenville</a>
+            <a href="/assignments/weathersite/springfield.html" class="childnav">Springfield</a>
+            <a href="/assignments/weathersite/stormcenter.html" class="childnav">Storm Center</a>
+            <a href="/assignments/weathersite/gallery.html" class="childnav">Gallery</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i></a>
         </nav>
@@ -40,8 +32,8 @@
         <!--JS for to toggle the hamburger button-->
         <script src="scripts/hamburger.js"></script>
         
-        <!--JS for wayfinding
-        <script src="scripts/wayfinding.js"></script>-->
+        <!--JS for wayfinding-->
+        <script src="scripts/wayfinding.js"></script>
         
         <main>
             <section class="weather-story">
@@ -107,24 +99,17 @@
                 </section>
                 <script src="scripts/towndata.js"></script>
             </div>
+            
+            <section class=dateToday>
+                <h4>Today is <span id="currentdate"></span></h4>            
+            </section>
+            
         </main>
-        <footer>
-            <section class="contact">
-                <h6>Contact information placeholder<br>
-                    999.999.9999<br>
-                    123 Main St. Anytown, US 99999<br>
-                    Google Map</h6>
-            </section>
-            
-            <section class="footer-bar">
-                <h6>&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate"></span></h6>
-            </section>
-            
-            <section class="footer-attribution">
-          <p>The weather information is licensed under a Creative Commons Attribution-ShareALike 4.0 Generic License. It is attributed to OpenWeatherMap.</p>
-            </section>
-            
+        
+        <footer includefile="footer.html">        
         </footer>
+        
+        <script src="scripts/include.js"></script>
         
         <!--JS for to currentdate-->
         <script src="scripts/currentdate.js"></script>

@@ -87,14 +87,14 @@ header, nav, main, footer { /* the comma between the selectors means apply the f
     color: black;    
 }
 
-.topnav a.activelink {
+.topnav a#activelink {
     background-color: #ffbe67;
 }
 
-.active {    
-    background-color: #cf7600;
+/*.activelink {    
+    background-color: #ffbe67;
     color: white;    
-}
+}*/
 
 .topnav a.icon {    
     display: none;    
@@ -120,15 +120,30 @@ header, nav, main, footer { /* the comma between the selectors means apply the f
         display: block;
         text-align: left;
   }
-    .topnav.responsive a#home,
+    /*.topnav.responsive a#home,
     .topnav.responsive a#franklin,
     .topnav.responsive a#greenville,
     .topnav.responsive a#springfield,
     .topnav.responsive a#storm,
     .topnav.responsive a#gallery {
         margin-left: 2.5rem;
+  }*/
+    
+    .topnav.responsive a.childnav {
+        margin-left: 2.5rem;
   }
     
+}
+
+/*-----------------------CURRENT DATE-----------------------*/
+
+.dateToday {
+    color: #fff;
+    }
+
+.dateToday h4 {
+    margin: 0.5rem 0 0 0;
+    text-align: center;
 }
 
 /*-----------------------MAIN HOME-----------------------*/

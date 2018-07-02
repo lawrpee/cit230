@@ -397,14 +397,14 @@ form label.top input, form label.top select {
     max-width: 20rem;
 }
 
-form div.storm-severity-rating {
+form span.storm-severity-rating {
     display: flex;
     width: 100%;
     max-width: 20rem;
     padding-top: 0;
 }
 
-form div.slider-element {
+form span.slider-element {
     width: 8%;
     font-size: 1rem;
     align-self: center;
@@ -416,7 +416,7 @@ form input#rating {
     width: 68%;
 }
 
-form div#ratingValue {
+form span#ratingValue {
     margin-left: 0.5rem;
     color: #CF7600;
     background-color: white;

@@ -299,7 +299,9 @@ footer .assignment-link {
     padding-right: 5px;
 }
 
-
+.assignment-link ul li:hover {
+    background-color: #fff;
+}
 
 
 

@@ -3,53 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Alcove Digital Systems</title>
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-2.2.1.min.js"></script>
-	<script>
-	$(function(){
-		// jQuery Code goes here
-        
-        //playing with styles        
-        var togglestyle = function() {
-            
-            var inputfields = $('input[type="text"]');
-            
-            if (inputfields.css('background-color') === 'rgb(255,0,0)') {
-                //set background color to white
-                inputfields.css('background-color', 'rgb(255,255,255)');
-            } else {
-                //set background color to red
-                inputfields.css('background-color', 'rgb(255,0,0)');
-            }
-        }
-        
-        $('#ReqAQuoteBtn').click( togglestyle );
-        //end of playing with styles
-        
-        //inserting content
-        $('.coreValues').prepend("<li><strong>This is brand new !!</strong></li>");
-        
-        $("<li><strong>This is also great !!</strong></li>").prependTo('.coreValues');
-        
-        var nameVal = $('input[name="nameVal"]');
-        
-        function fillEmpty() {
-            if (nameVal.val() == '') {
-                nameVal.val('John Doe');
-            }
-        }
-        
-        $('#ReqAQuoteBtn').click( fillEmpty );
-        //end of inserting content
-
-	})
-	</script>
+	<link rel="stylesheet" href="styles/style.css">
+    <!--local copy of the jQuery library
+	<script src="scripts/jquery-2.2.1.min.js"></script>-->
 </head>
 <body>
 <!-- Master Container Div -->
 	<div class="container">
 	<!-- Header Div containing the Logo & Navigation Links -->
-		<div class="header">
+		<header>
 			<div class="logo" id="alcoveLogo"></div>
 			<div class="navbar">
 				<ul class="navigation">
@@ -61,14 +23,14 @@
 					<li><a href="#">Contact Us</a></li>
 				</ul>
 			</div>
-		</div>
+		</header>
 		<!-- Content Div -->
-		<div class="content">
+		<main>
 			<div class="headImage"></div>
 			<!-- Get a Free Quote Form -->
 			<div class="registerForm">
 				<form id="GetAQuoteForm">
-					<img class="ReqAQuoteImg" src="img/quote.png" alt="">
+					<img class="ReqAQuoteImg" src="images/quote.png" alt="quote">
 					<br>
 					<div class="FormFieldHolder">
 						<div class="labelHolder"><label>Full Name</label></div>
@@ -122,9 +84,9 @@
 				<div class="boxes box3">
 					<h2>Our Work</h2>
 					<hr>
-					<a href="#" class="showcaseBtn"><img src="img/websites.jpg" alt=""></a>
-					<a href="#" class="showcaseBtn"><img src="img/mobileapps.jpg" alt=""></a>
-					<a href="#" class="showcaseBtn"><img src="img/webapps.jpg" alt=""></a>
+					<a href="#" class="showcaseBtn"><img src="images/websites.jpg" alt="website"></a>
+					<a href="#" class="showcaseBtn"><img src="images/mobileapps.jpg" alt="mobile_app"></a>
+					<a href="#" class="showcaseBtn"><img src="images/webapps.jpg" alt="webapp"></a>
 					<select name="showcaseOthers" id="showcaseOthers">
 						<option value="01">UI/UX Design</option>
 						<option value="02">Big Data Implementation</option>
@@ -133,11 +95,26 @@
 					</select>
 				</div>
 			</div>
-		</div>
+		</main>
 
-		<div class="footer">
-			<h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
-		</div>
+		<footer>
+            <div class="site-name"><h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5></div>
+            <div class="assignment-link">
+                <ul>
+                    <li><a href="/assignments/lesson-11/intro-jquery-files/Lesson4/animatedMenuBegin.htm">Animated Menu</a></li>
+                    <li><a href="/assignments/lesson-11/intro-jquery-files/Lesson4/DropDownMenuBegin.htm">Drop Down Menu</a></li>
+                    <li><a href="/assignments/lesson-11/intro-jquery-files/Lesson4/fruitBasketBegin.htm">Fruit Basket</a></li>
+                    <li><a href="/assignments/lesson-11/intro-jquery-files/Lesson4/InsertHTMLBegin.htm">InnerHTML</a></li>
+                    <li><a href="/assignments/lesson-11/intro-jquery-files/Lesson4/toggleButtonBegin.htm">Toggle Button</a></li>
+                </ul>
+            </div>
+			
+		</footer>
 	</div>
+    
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="scripts/playwithStyles.js"></script>
+    <script src="scripts/insertingComments.js"></script>
+    
 </body>
 </html>

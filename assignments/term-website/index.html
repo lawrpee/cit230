@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        <meta name="description" content="Home page for the Mountain Spoke site">
+        <link rel="stylesheet" href="/assignments/term-website/styles/normalize.css">
+        <link rel="stylesheet" href="/assignments/term-website/styles/main.css">
+        <link rel="stylesheet" href="/assignments/term-website/styles/medium.css">
+        <link rel="stylesheet" href="/assignments/term-website/styles/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display%7CRubik" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        
+        <header includefile="header.html"></header>
+            
+        <nav class="topnav" id="myTopnav">
+            <a href="/assignments/term-website/index.html" class="childnav">Home</a>
+            <a href="/assignments/term-website/adventure-tours.html" class="childnav">Adventure Tours</a>
+            <a href="/assignments/term-website/events.html" class="childnav">Events</a>
+            <a href="/assignments/term-website/shop-oinline.html" class="childnav">Shop Online</a>
+            <a href="/assignments/term-website/services.html" class="childnav">Services</a>
+            <a href="/assignments/term-website/contact-us.html" class="childnav">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+        </nav>
+        
+        <!--JS for to toggle the hamburger button-->
+        <script src="scripts/hamburger.js"></script>
+        
+        <!--JS for wayfinding-->
+        <script src="scripts/wayfinding.js"></script>
+        
+        <main>
+            
+            <section class="banner-area">
+                <!--banner images-preferably banner slider-->
+                <figure>
+                    <img src="images/sunny-weather-opt.jpg" alt="sunny-weather" sizes="(max-width: 37.5em) 100vw, 50vw"
+                         srcset="images/sunny-weather-opt-200.jpg 200w,
+                                 images/sunny-weather-opt-500.jpg 500w,
+                                 images/sunny-weather-opt-800.jpg 800w,
+                                 images/sunny-weather-opt-orig.jpg 1100w">
+                </figure>
+            </section>
+            
+            <section class="nav-cards">
+                <div class="tour-card">
+                    <h1>Upcoming Tours</h1>
+                    <h2>"Cycle the Continental Divide"</h2>
+                    <p>9-8-18</p>
+                    <p class="link-button"><a href="#">See details</a></p>
+                </div>
+                <div class="buynow-card">
+                    <h1>Features Bikes</h1>
+                    <img src="/assignments/term-website/images/sun-150.png" alt="bikes"> 
+                    <!--placeholder image only-->
+                    <p class="link-button"><a href="#">Shop now</a></p>
+                </div>
+                <div class="services-card">
+                    <h1>Need a Repair</h1>
+                    <ul>
+                        <li><a href="#">Check and Tune</a></li>
+                        <li><a href="#">General Bike Service</a></li>
+                        <li><a href="#">Full Bike Service</a></li>
+                    </ul>
+                    <p class="link-button"><a href="#">Book now</a></p>
+                </div>
+            </section>
+            
+            <section>
+                <div class="social-media-tabs">
+                    <h1>Join the Community Now. Follow Us.</h1>
+                    <a href="#"><img src="#" alt="facebook"></a>
+                    <a href="#"><img src="#" alt="Twitter"></a>
+                    <a href="#"><img src="#" alt="Instagram"></a>
+                    <a href="#"><img src="#" alt="Youtube"></a>
+                </div>
+            </section>
+            
+            <section class="article-recognition">
+                <div class="recognition-card">
+                </div>
+                <article>
+                    <figure>
+                        <img src="images/sunny-weather-opt.jpg" alt="young-biker" sizes="(max-width: 37.5em) 100vw, 50vw"
+                             srcset="images/sunny-weather-opt-200.jpg 200w,
+                                     images/sunny-weather-opt-500.jpg 500w,
+                                     images/sunny-weather-opt-800.jpg 800w,
+                                     images/sunny-weather-opt-orig.jpg 1100w">
+                    </figure>
+                    <h1>Youngest Biker in History</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium ultricies ex, eget scelerisque est consequat id. Sed sollicitudin imperdiet odio vitae porta. Duis bibendum ut elit non porta. Morbi et elit facilisis, gravida purus sit amet, mollis purus. Pellentesque rhoncus pulvinar augue vitae pretium. Nulla faucibus convallis elit nec dictum. Nulla eget commodo dui. Duis consequat neque in erat ultrices porta. Aliquam et sem at magna lobortis porttitor. Vivamus faucibus, dolor nec fringilla luctus, nunc magna hendrerit arcu, at pretium erat lectus id mauris. Morbi non erat ut diam scelerisque aliquet. Ut at tristique ipsum. Suspendisse ac diam tristique sapien feugiat mattis at at lorem.</p>
+                    <p class="read-more"><a href="#">read more</a></p>
+                </article>
+            </section>
+            
+        </main>
+        
+        <footer includefile="footer.html"></footer>
+        
+        <script src="scripts/include.js"></script>
+        
+        <!--JS for to currentdate-->
+        <script src="scripts/currentdate.js"></script>
+        
+    </body>
+</html>

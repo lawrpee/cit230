@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Events</title>
+        <meta name="description" content="Annual events in Bozeman">
+        <link rel="stylesheet" href="/assignments/term-website/styles/normalize.css">
+        <link rel="stylesheet" href="/assignments/term-website/styles/main.css">
+        <link rel="stylesheet" href="/assignments/term-website/styles/medium.css">
+        <link rel="stylesheet" href="/assignments/term-website/styles/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display%7CRubik" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        
+        <header includefile="header.html">
+        </header>
+        
+        <nav class="topnav" id="myTopnav">
+            <a href="/assignments/term-website/index.html" class="childnav">Home</a>
+            <a href="/assignments/term-website/adventure-tours.html" class="childnav">Adventure Tours</a>
+            <a href="/assignments/term-website/events.html" class="childnav">Events</a>
+            <a href="/assignments/term-website/shop-oinline.html" class="childnav">Shop Online</a>
+            <a href="/assignments/term-website/services.html" class="childnav">Services</a>
+            <a href="/assignments/term-website/contact-us.html" class="childnav">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+        </nav>
+        
+        <!--JS for to toggle the hamburger button-->
+        <script src="scripts/hamburger.js"></script>
+        
+        <!--JS for wayfinding-->
+        <script src="scripts/wayfinding.js"></script>
+        
+        <main>
+            
+            <section class="banner-area">
+                <!--banner images-preferably banner slider-->
+                <figure>
+                    <img src="images/sunny-weather-opt.jpg" alt="sunny-weather" sizes="(max-width: 37.5em) 100vw, 50vw"
+                         srcset="images/sunny-weather-opt-200.jpg 200w,
+                                 images/sunny-weather-opt-500.jpg 500w,
+                                 images/sunny-weather-opt-800.jpg 800w,
+                                 images/sunny-weather-opt-orig.jpg 1100w">
+                </figure>
+            </section>
+            
+            <section class="annual-events">
+                <h1>Annual Events</h1>
+            </section>
+            
+            <section class="annual-event-card">
+                <div class="event-card">
+                    <img src="#">
+                    <h1>Cycle the Continental Divide</h1>
+                    <p>Over 3,000 miles that cuts through the back side of Mexico thru Canada and nearly a thousand miles of it bisects the western half of Montana which is considered the longest mountain trail in the state.</p>
+                    <h2>Date of Event</h2>
+                    <p>The trail is set to launch by September 8, 2018 and expected to last for approximately 5 months. </p>
+                    <h2>The Essentials</h2>
+                    <p>In engaging in this trail, these are the things required (but not limited to) for every bikers.</p>
+                    <ul>
+                        <li>Map</li>
+                        <li>Compass</li>
+                        <li>Water</li>
+                        <li>Lightweight Food</li>
+                        <li>Extra Clothes</li>
+                        <li>First-Aid Kit</li>
+                        <li>Pocket Knife</li>
+                        <li>Sun Protection</li>
+                        <li>Flashligt</li>
+                        <li>Matches and Firestarter</li>
+                    </ul>
+                    <p>Registration is only for $100 but early registrants will get $20 rebate consumable along the trail.</p>
+                    <!--<p class="link-button"><a href="#">I want to join</a></p>-->
+                </div>
+            </section>
+            
+            
+            
+            <form id="registrationForm" method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Event Registration Form</legend>
+                    <label class="top">Full Name* <input type="text" name="fullName" required pattern="([A-Za-z\s]+){5,}" title="Please use alpha characters only with a minimum of five characters"></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="top">Phone Number* <input type="tel" name="phone" required></label>
+                    <label class="top">Date of Birth <input type="date" name="date"></label>
+                    <label class="top">Home State <input type="text" name="homeState"></label>
+                    <textarea class="form-txt-area" name="comment" form="registrationForm">Enter special accommodation comments here...</textarea>
+                </fieldset>
+                
+                <input type="submit" value="Register me now"  class="submitBtn">
+                
+            </form>
+            
+        </main>
+        
+        <footer includefile="footer.html">
+        </footer>
+        
+        <script src="scripts/include.js"></script>
+        <!--JS for to currentdate-->
+        <script src="scripts/currentdate.js"></script>
+        
+    </body>
+</html>

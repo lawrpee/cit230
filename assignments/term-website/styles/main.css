@@ -1,0 +1,460 @@
+/* This main css file contains the default rules and is geared toward the small/phone view.
+CSS will use flexbox exlusively and CSS grid box*/
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif, 'Playfair Display', serif; /* Declare the base font-family */
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 64em; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    margin: auto;
+}
+
+/*---------------------HEADER---------------------*/
+
+.site-header {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+.site-header picture.logo {
+    align-self: center;
+    flex: 0 1 auto;
+    margin: 2%;
+    padding: .25em;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.site-header .headings h1,
+.site-header .headings h2 {
+    color: #b89935;
+    flex: 0 1 auto;
+    padding: .25em;
+}
+
+.site-header .headings h1 {
+    align-self: center;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: .50em .50em 0 .50em;
+}
+
+.site-header .headings h2 {
+    align-self: center;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 .50em .50em .50em;
+}
+
+.call-to-action-head {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+    align-self: flex-start;
+}
+
+.call-to-action-head h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.75rem;
+    color: #000;
+}
+
+/*---------------------NAV---------------------*/
+
+.topnav {
+    
+    background-color: #6493c1;    
+}
+
+.topnav {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+.topnav {
+    flex: 0 1 auto;
+}
+
+.topnav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 14px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.topnav a:hover {    
+    background-color: #ddc5a3;
+    color: black;    
+}
+
+.topnav a#activelink {
+    background-color: #b89935;
+}
+
+/*.activelink {    
+    background-color: #ffbe67;
+    color: white;    
+}*/
+
+.topnav a.icon {    
+    display: none;    
+}
+
+@media screen and (max-width: 37.5em) {    
+    .topnav a {display: none;}
+    .topnav a.icon {
+        display: flex; 
+  }    
+}
+
+@media screen and (max-width: 37.5em) {
+    
+    .topnav.responsive {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+  }
+    .topnav.responsive a {
+        display: block;
+        text-align: left;
+  }
+    /*.topnav.responsive a#home,
+    .topnav.responsive a#franklin,
+    .topnav.responsive a#greenville,
+    .topnav.responsive a#springfield,
+    .topnav.responsive a#storm,
+    .topnav.responsive a#gallery {
+        margin-left: 2.5rem;
+  }*/
+    
+    .topnav.responsive a.childnav {
+        margin-left: 2.5em;
+  }
+    
+}
+
+/*-----------------------CURRENT DATE-----------------------*/
+
+/*.dateToday {
+    color: #fff;
+    }
+
+.dateToday h4 {
+    margin: 0.5rem 0 0 0;
+    text-align: center;
+}*/
+
+/*-----------------------MAIN HOME-----------------------*/
+
+main {
+    background-color: #fff;
+}
+
+figure {
+    margin: 0;
+}
+
+.banner-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.tour-card, .buynow-card, .services-card {
+    border: 2px solid #b89935;
+    border-radius: 12px;
+    margin: 2%;
+}
+
+.tour-card h1, .buynow-card h1, .services-card h1 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #000;
+}
+
+.tour-card h2 {
+    font-size: 1.75;
+    text-align: center;
+    color: #b89935;
+}
+
+.tour-card p, .buynow-card p, .services-card p {
+    font-size: 1em;
+    text-align: center;
+    color: #000;
+}
+
+.buynow-card img {
+    display: block;
+    margin: auto;
+}
+
+.services-card ul {
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding: 0 ;
+}
+
+.services-card li {
+    list-style-type: none;
+    text-align: center;
+    padding: 2%;
+}
+
+.services-card li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.services-card li a:hover {
+    color: #ddc5a3;
+}
+
+.link-button {
+    border: 1px solid #b89935;
+    border-radius: 12px;
+    width: 40%;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.link-button a {
+    text-decoration: none;
+    color: #000;
+}
+
+.link-button:hover {
+    background-color: #ddc5a3;
+}
+
+.social-media-tabs {
+    background-color: #485412;
+}
+
+.article-recognition h1, .article-recognition p {
+    color: #000;
+}
+
+article figure img {
+    max-width: 100%;
+}
+
+.read-more a {
+    text-decoration: none;
+    color: #b89935;
+}
+
+.article-recognition {
+    margin: 2%;
+}
+
+
+/*---------------------MAIN ADVENTURE TOURS---------------------*/
+
+.daily-tours h1, .upcoming-tours h1 {
+    color: #000;
+    font-size: 1.5em;
+}
+
+.daily-card h1 {
+    color: #000;
+    font-size: 1.25em;
+}
+
+.daily-card p {
+    color: #000;
+    font-size: 1em;
+}
+
+.daily-card .link-button {
+    text-align: center;
+}
+
+.upcoming-tours-section {
+    padding: 0 2% 2% 2%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+table, th, td {
+    border: 1px solid #b89935;
+    padding: 0.25rem;
+}
+
+table thead, table tfoot {
+    background-color: #ddc5a3;
+}
+
+table .season-tour {
+    font-size: 1.25em;
+}
+
+table .tour-info {
+    width: 50%;
+}
+
+table .tour-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+table .tour-info li {
+    font-size: 0.75em;
+}
+
+.bike-tour:hover {
+    background-color: #ddc5a3;
+}
+
+.book-now a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*---------------------MAIN EVENTS---------------------*/
+
+.annual-events h1 {
+    color: #000;
+    font-size: 1.5em;
+}
+
+.annual-events, .annual-event-card {
+    margin-left: 2%;
+}
+
+.event-card h1 {
+    color: #000;
+    font-size: 1.25em;
+}
+
+.event-card h2 {
+    color: #000;
+    font-size: 1em;
+}
+
+.event-card p {
+    color: #000;
+    font-size: 1em;
+}
+
+.event-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.event-card li {
+    padding: 1% 0;
+}
+
+.event-card .link-button {
+    text-align: center;
+}
+
+form fieldset {
+    border: 1px solid #b89935;
+    border-radius: 4px;
+    margin: 4% 2% 2% 2%;
+}
+
+form legend {
+    color: #000;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    font-size: 0.8em;
+}
+
+form label.top input {
+    /*-webkit-appearance: none;*/
+    display: block;
+    font-size: 1.25em;
+    border: 1px solid #b89935;
+    border-radius: 4px;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form textarea.form-txt-area {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    height: 8rem;
+    border-color: #b89935;
+    border-radius: 4px;
+    padding: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #ddc5a3;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: .75rem 1.5rem;
+    margin: 0 2% 1rem 2%;
+    width: 96%;
+    max-width: 15rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+/*---------------------THANKS---------------------*/
+
+.thanks-page {
+    margin: 0 2%;
+}
+
+.thanks-page h1, thanks-page p {
+    color: #000;
+}
+
+/*---------------------FOOTER---------------------*/
+
+.site-footer {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+.footer-contact h3, .footer-bar-link h3 {
+    color: #fff;
+    font-size: 0.75rem;
+    margin-right: 1em;
+    margin-left: 1em;
+}

@@ -1,168 +1,111 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Us</title>
+        <meta name="description" content="Contact page for the Mountain Spoke site">
+        <link rel="stylesheet" href="/assignments/term-website/styles/normalize.css">
+        <link rel="stylesheet" href="/assignments/term-website/styles/main.css">
+        <link rel="stylesheet" href="/assignments/term-website/styles/medium.css">
+        <link rel="stylesheet" href="/assignments/term-website/styles/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display%7CRubik" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
     
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Springfield City</title>
-    <meta name="description" content="Springfield city page for the Weather Watch site">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CMuli" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-</head>
-    
-<body>
-    
-    <header includefile="header.html">
-    </header>
-    
-    <nav class="topnav" id="myTopnav">
-        <a href="/assignments/weathersite/index.html" class="childnav">Home</a>
-        <a href="/assignments/weathersite/franklin.html" class="childnav">Franklin</a>
-        <a href="/assignments/weathersite/greenville.html" class="childnav">Greenville</a>
-        <a href="/assignments/weathersite/springfield.html" class="childnav">Springfield</a>
-        <a href="/assignments/weathersite/stormcenter.html" class="childnav">Storm Center</a>
-        <a href="/assignments/weathersite/gallery.html" class="childnav">Gallery</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i></a>
-    </nav>
-    
-    <!--JS for to toggle the hamburger button-->
-    <script src="scripts/hamburger.js"></script>
-    
-    <!--JS for wayfinding-->
-    <script src="scripts/wayfinding.js"></script>
-    
-  <main>
-      
-      <section class="weather-image">
-          
-          <h2>Springfield</h2>
-          
-          <img src="images/sunny-weather-opt.jpg" alt="sunny-weather" sizes="(max-width: 37.5em) 100vw, 50vw"
-               srcset="images/sunny-weather-opt-200.jpg 200w,
-                       images/sunny-weather-opt-500.jpg 500w,
-                       images/sunny-weather-opt-800.jpg 800w,
-                       images/sunny-weather-opt-orig.jpg 1100w
-                       "
-               >
-
-      </section>
-      
-      <section class="weather-summary">
-          
-          <!--<h3>Weather Summary</h3>-->
-          
-          <div class="current">
-              
-              <h3 id="current-weather-description"></h3>
-              
-              <picture>                  
-                  <img id="weather-icon" src="images/sun.png" alt="sunny-symbol">              
-              </picture>
-              
-              <p>Current Temp: <span id="current-temp"></span>&deg;F</p>
-          
-          </div>
-          
-          <div class="highlow">
-              
-              <p>High: <span id="high-temp"></span>&deg;F</p>
-              <p>Low: <span id="low-temp"></span>&deg;F</p>
-          
-          </div>
+    <body>
+        
+        <header includefile="header.html"></header>
             
-          <div class="conditions">
-              
-              <p>Precipitation: 0%</p>
-              <p>Wind Speed: <span id="wind-speed"></span> mph SW</p>
-          
-          </div>
-          
-          <div class="windchill">
-              
-              <p>Windchill: <span id="displayWindchillValue"></span>&deg;F</p>
-              <!--js for windchill computation-->
-              <script src="scripts/windchill-springfield.js"></script>
-                    
-          </div>
-      
-      </section>
-      
-      <!--js for the current weather-->
-      <script src="scripts/weather-springfield.js"></script>
+        <nav class="topnav" id="myTopnav">
+            <a href="/assignments/term-website/index.html" class="childnav">Home</a>
+            <a href="/assignments/term-website/adventure-tours.html" class="childnav">Adventure Tours</a>
+            <a href="/assignments/term-website/events.html" class="childnav">Events</a>
+            <a href="/assignments/term-website/shop-oinline.html" class="childnav">Shop Online</a>
+            <a href="/assignments/term-website/services.html" class="childnav">Services</a>
+            <a href="/assignments/term-website/contact-us.html" class="childnav">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+        </nav>
+        
+        <!--JS for to toggle the hamburger button-->
+        <script src="scripts/hamburger.js"></script>
+        
+        <!--JS for wayfinding-->
+        <script src="scripts/wayfinding.js"></script>
+        
+        <main>
             
-      <section class="forecast">
-          
-          <h3>Ten Day Forecast</h3>
-          
-          <table>
-              <thead>
-                  <tr>
-                      <th>Day 1</th>
-                      <th>Day 2</th>
-                      <th>Day 3</th>
-                      <th>Day 4</th>
-                      <th>Day 5</th>
-                      <th>Day 6</th>
-                      <th>Day 7</th>
-                      <th>Day 8</th>
-                      <th>Day 9</th>
-                      <th>Day 10</th>
-                  </tr>
-              </thead>
-              <tbody>  
-                  <tr>
-                      <td>89&deg;F</td>
-                      <td>87&deg;F</td>
-                      <td>78&deg;F</td>
-                      <td>75&deg;F</td>
-                      <td>72&deg;F</td>
-                      <td>72&deg;F</td>
-                      <td>79&deg;F</td>
-                      <td>83&deg;F</td>
-                      <td>85&deg;F</td>
-                      <td>89&deg;F</td>
-                  </tr>
-              </tbody>
-          </table>
-          
-      </section>
-      
-      <article>
-          
-          <h3>Springfield Breaks Record</h3>
-          
-          <img src="images/sunny-city-franklin-opt.jpg" alt="sunny-city-franklin" sizes="(max-width: 37.5em) 100vw, 50vw"
-               srcset="images/sunny-city-franklin-opt-200.jpg 200w,
-                       images/sunny-city-franklin-opt-500.jpg 500w,
-                       images/sunny-city-franklin-opt-800.jpg 800w
-                       "
-               >
-          
-          <p class="town-article">
-              
-              Lorem ipsum dolor sit amet, pro populo consequuntur te, vix adhuc semper volutpat cu. Te tollit pericula est, quo id choro appellantur. Quo eros decore torquatos eu. Ad accumsan officiis corrumpit has, usu ea veniam eirmod copiosae. Nam in odio labitur virtute. Vidit adipiscing vix cu, usu tale accommodare ut. Per ne soleat possit pertinacia. Vel cetero commune honestatis cu, no mei fuisset forensibus, per ad cetero ceteros definitiones. Vis eu perfecto laboramus, est id ullum eirmod, habeo luptatum vivendum at pro. Soluta dicunt in pri, graeci temporibus vis ne. Sit clita lobortis recteque te, qui delenit corrumpit ad.
-          
-          </p>
-      
-      </article>
-      
-      <section class=dateToday>
-          <h4>Today is <span id="currentdate"></span></h4>
-      </section>
-    
-    </main>
-    
-    <footer includefile="footer.html">
-    </footer>
-    
-    <script src="scripts/include.js"></script>
-    <script src="scripts/currentdate.js"></script>
-  
-</body>
+            <section class="banner-area">
+                <!--banner images-preferably banner slider-->
+                <figure>
+                    <img src="images/sunny-weather-opt.jpg" alt="sunny-weather" sizes="(max-width: 37.5em) 100vw, 50vw"
+                         srcset="images/sunny-weather-opt-200.jpg 200w,
+                                 images/sunny-weather-opt-500.jpg 500w,
+                                 images/sunny-weather-opt-800.jpg 800w,
+                                 images/sunny-weather-opt-orig.jpg 1100w">
+                </figure>
+            </section>
+            
+            <section class="contact-page">
+                <h1>Contact Us</h1>
+            </section>
+            
+            <section class="contact-teaser">
+                <figure>
+                    <img src="images/sunny-weather-opt.jpg" alt="sunny-weather" sizes="(max-width: 37.5em) 100vw, 50vw"
+                         srcset="images/sunny-weather-opt-200.jpg 200w,
+                                 images/sunny-weather-opt-500.jpg 500w,
+                                 images/sunny-weather-opt-800.jpg 800w,
+                                 images/sunny-weather-opt-orig.jpg 1100w">
+                </figure>
+                <p>The Mountain Spoke is centrally located in Commons Drive Bozeman. Find us on the corner of Black and Babcock, across the alley from Terrazza Martha Sports Pub.</p>
+                <p>Our knowledgeable staff is waiting for you! We know that questions may arise before and after the sale so please contact us with any and all of your questions. We look forward to hearing from you.</p>
+            </section>
+            
+            <section class="contact-details">
+                <h1>Fill out the form below to send us an email</h1>
+                <h2>The Mountain Spoke</h2>
+                <div>
+                    <p>Address:</p>
+                    <p>3950 Valley Commons Drive Bozeman, MT</p>
+                </div>
+                <div>
+                    <p>Phone:</p>
+                    <p>+63 948-36-58</p>
+                </div>
+                <div>
+                    <p>Hours:</p>
+                    <p>Mon - Fri: 8:00 - 5:00 and Sat: 8:00 - 8:00</p>
+                    <p>We are close on Sundays</p>
+                </div>
+            </section>
+            
+            <form id="contactForm" method="get" action="thanks-cont.html">
+                <fieldset>
+                    <label class="top">Full Name* <input type="text" name="fullName" required pattern="([A-Za-z\s]+){5,}" title="Please use alpha characters only with a minimum of five characters"></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="top">Phone Number* <input type="tel" name="phone" required></label>
+                    <textarea class="form-txt-area" name="comment" form="registrationForm">Questions or comments...</textarea>
+                </fieldset>
+                
+                <input type="submit" value="Submit"  class="submitBtn">                
+            </form>
+            
+            <section class="map">
+                <div class="map-frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9314410406146!2d-111.09291154881652!3d45.672276627453286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718%2C+USA!5e0!3m2!1sen!2sph!4v1532574329596" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </section>
+            
+        </main>
+        
+        <footer includefile="footer.html"></footer>
+        
+        <script src="scripts/include.js"></script>
+        
+        <!--JS for to currentdate-->
+        <script src="scripts/currentdate.js"></script>
+        
+    </body>
 </html>

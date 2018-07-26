@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Greenville City</title>
-    <meta name="description" content="Greenville city page for the Weather Watch site">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CMuli" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Services</title>
+        <meta name="description" content="Services page for the Mountain Spoke site">
+        <link rel="stylesheet" href="/assignments/term-website/styles/normalize.css">
+        <link rel="stylesheet" href="/assignments/term-website/styles/main.css">
+        <link rel="stylesheet" href="/assignments/term-website/styles/medium.css">
+        <link rel="stylesheet" href="/assignments/term-website/styles/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display%7CRubik" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
     
 <body>
     
@@ -21,141 +19,122 @@
     </header>
     
     <nav class="topnav" id="myTopnav">
-        <a href="/assignments/weathersite/index.html" class="childnav">Home</a>
-        <a href="/assignments/weathersite/franklin.html" class="childnav">Franklin</a>
-        <a href="/assignments/weathersite/greenville.html" class="childnav">Greenville</a>
-        <a href="/assignments/weathersite/springfield.html" class="childnav">Springfield</a>
-        <a href="/assignments/weathersite/stormcenter.html" class="childnav">Storm Center</a>
-        <a href="/assignments/weathersite/gallery.html" class="childnav">Gallery</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i></a>
+            <a href="/assignments/term-website/index.html" class="childnav">Home</a>
+            <a href="/assignments/term-website/adventure-tours.html" class="childnav">Adventure Tours</a>
+            <a href="/assignments/term-website/events.html" class="childnav">Events</a>
+            <a href="/assignments/term-website/shop-oinline.html" class="childnav">Shop Online</a>
+            <a href="/assignments/term-website/services.html" class="childnav">Services</a>
+            <a href="/assignments/term-website/contact-us.html" class="childnav">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
     </nav>
     
     <!--JS for to toggle the hamburger button-->
     <script src="scripts/hamburger.js"></script>
     
     <!--JS for wayfinding-->
-        <script src="scripts/wayfinding.js"></script>
+    <script src="scripts/wayfinding.js"></script>
     
-  <main>
-      
-      <section class="weather-image">
-          
-          <h2>Greenville</h2>
-          
-          <img src="images/sunny-weather-opt.jpg" alt="sunny-weather" sizes="(max-width: 37.5em) 100vw, 50vw"
-               srcset="images/sunny-weather-opt-200.jpg 200w,
-                       images/sunny-weather-opt-500.jpg 500w,
-                       images/sunny-weather-opt-800.jpg 800w,
-                       images/sunny-weather-opt-orig.jpg 1100w
-                       "
-               >
-
-      </section>
-      
-      <section class="weather-summary">
-          
-          <!--<h3>Weather Summary</h3>-->
-          
-          <div class="current">
-              
-              <h3 id="current-weather-description"></h3>
-              
-              <picture>                  
-                  <img id="weather-icon" src="images/sun.png" alt="sunny-symbol">              
-              </picture>
-              
-              <p>Current Temp: <span id="current-temp"></span>&deg;F</p>
-          
-          </div>
-          
-          <div class="highlow">
-              
-              <p>High: <span id="high-temp"></span>&deg;F</p>
-              <p>Low: <span id="low-temp"></span>&deg;F</p>
-          
-          </div>
+    <main>
+        
+        <section class="banner-area">
+            <!--banner images-preferably banner slider-->
+            <figure>
+                <img src="images/sunny-weather-opt.jpg" alt="sunny-weather" sizes="(max-width: 37.5em) 100vw, 50vw"
+                     srcset="images/sunny-weather-opt-200.jpg 200w,
+                             images/sunny-weather-opt-500.jpg 500w,
+                             images/sunny-weather-opt-800.jpg 800w,
+                             images/sunny-weather-opt-orig.jpg 1100w">
+            </figure>
+        </section>
+        
+        <section class="services-page">
+            <h1>Services</h1>
+        </section>
             
-          <div class="conditions">
-              
-              <p>Precipitation: 0%</p>
-              <p>Wind Speed: <span id="wind-speed"></span> mph SW</p>
-          
-          </div>
-          
-          <div class="windchill">
-              
-              <p>Windchill: <span id="displayWindchillValue"></span>&deg;F</p>
-              <!--js for windchill computation-->
-              <script src="scripts/windchill-greenville.js"></script>
-                    
-          </div>
+        <section class="services-menu-section">
+            <table class="services-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th colspan="3">Description</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">The Mountain Spoke</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr class="service-type">
+                        <td>Safety Check</td>
+                        <td class="service-info">
+                            <ul>
+                                <li>Adjust Brakes</li>
+                                <li>Adjust Derailleurs</li>
+                                <li>Lube Drivetrain</li>
+                                <li>Check Bolts</li>
+                            </ul>
+                        </td>
+                        <td class="service-fee">$40</td>
+                        <td class="book-now"><a href="#">Book now</a></td>
+                    </tr>
+                    <tr class="service-type">
+                        <td>Singelspeed / BMX Tune</td>
+                        <td class="service-info">
+                            <ul>
+                                <li>Wash Bike</li>
+                                <li>True Wheels</li>
+                                <li>Adjust Brakes</li>
+                                <li>Adjust Hubs</li>
+                            </ul>
+                        </td>
+                        <td class="service-fee">$40</td>
+                        <td class="book-now"><a href="#">Book now</a></td>
+                    </tr>
+                    <tr class="service-type">
+                        <td>Standard Tune</td>
+                        <td class="service-info">
+                            <ul>
+                                <li>Wash Bike</li>
+                                <li>Condition Breaking Surface</li>
+                                <li>Adjust Breaks</li>
+                                <li>Adjsut Headsets</li>
+                            </ul>
+                        </td>
+                        <td class="service-fee">$70</td>
+                        <td class="book-now"><a href="#">Book now</a></td>
+                    </tr>
+                    <tr class="service-type">
+                        <td>Tune Up Pro</td>
+                        <td class="service-info">
+                            <ul>
+                                <li>Re-wrap Bar Tape</li>
+                                <li>Clean Suspension Seals</li>
+                                <li>Service Rear-end Pivots</li>
+                                <li>Install New Cables and Housing</li>
+                            </ul>
+                        </td>
+                        <td class="service-fee">$110 + parts</td>
+                        <td class="book-now"><a href="#">Book now</a></td>
+                    </tr>
+                    <tr class="service-type">
+                        <td>MTB Suspension Overhaul</td>
+                        <td class="service-info">
+                            <ul>
+                                <li>Service Freehub Internals</li>
+                                <li>Fork Rebuild</li>
+                                <li>Shock Rebuild</li>
+                                <li>Grease or Loctite Bolts Accordingly</li>
+                            </ul>
+                        </td>
+                        <td class="service-fee">$200 + parts</td>
+                        <td class="book-now"><a href="#">Book now</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
       
-      </section>
-      
-      <!--js for the current weather-->
-      <script src="scripts/weather-greenville.js"></script>
-            
-      <section class="forecast">
-          
-          <h3>Ten Day Forecast</h3>
-          
-          <table>
-              <thead>
-                  <tr>
-                      <th>Day 1</th>
-                      <th>Day 2</th>
-                      <th>Day 3</th>
-                      <th>Day 4</th>
-                      <th>Day 5</th>
-                      <th>Day 6</th>
-                      <th>Day 7</th>
-                      <th>Day 8</th>
-                      <th>Day 9</th>
-                      <th>Day 10</th>
-                  </tr>
-              </thead>
-              <tbody>  
-                  <tr>
-                      <td>89&deg;F</td>
-                      <td>87&deg;F</td>
-                      <td>78&deg;F</td>
-                      <td>75&deg;F</td>
-                      <td>72&deg;F</td>
-                      <td>72&deg;F</td>
-                      <td>79&deg;F</td>
-                      <td>83&deg;F</td>
-                      <td>85&deg;F</td>
-                      <td>89&deg;F</td>
-                  </tr>
-              </tbody>
-          </table>
-          
-      </section>
-      
-      <article>
-          
-          <h3>Greenville Breaks Record</h3>
-          
-          <img src="images/sunny-city-franklin-opt.jpg" alt="sunny-city-franklin" sizes="(max-width: 37.5em) 100vw, 50vw"
-               srcset="images/sunny-city-franklin-opt-200.jpg 200w,
-                       images/sunny-city-franklin-opt-500.jpg 500w,
-                       images/sunny-city-franklin-opt-800.jpg 800w
-                       "
-               >
-          
-          <p class="town-article">
-              
-              Lorem ipsum dolor sit amet, pro populo consequuntur te, vix adhuc semper volutpat cu. Te tollit pericula est, quo id choro appellantur. Quo eros decore torquatos eu. Ad accumsan officiis corrumpit has, usu ea veniam eirmod copiosae. Nam in odio labitur virtute. Vidit adipiscing vix cu, usu tale accommodare ut. Per ne soleat possit pertinacia. Vel cetero commune honestatis cu, no mei fuisset forensibus, per ad cetero ceteros definitiones. Vis eu perfecto laboramus, est id ullum eirmod, habeo luptatum vivendum at pro. Soluta dicunt in pri, graeci temporibus vis ne. Sit clita lobortis recteque te, qui delenit corrumpit ad.
-          
-          </p>
-      
-      </article>
-      
-      <section class=dateToday>
-          <h4>Today is <span id="currentdate"></span></h4>
-      </section>
-    
     </main>
     
     <footer includefile="footer.html">

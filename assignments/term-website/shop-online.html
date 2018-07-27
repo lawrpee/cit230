@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sales</title>
+        <meta name="description" content="Sales page for the Mountain Spoke site">
+        <link rel="stylesheet" href="/assignments/term-website/styles/normalize.css">
+        <link rel="stylesheet" href="/assignments/term-website/styles/main.css">
+        <link rel="stylesheet" href="/assignments/term-website/styles/medium.css">
+        <link rel="stylesheet" href="/assignments/term-website/styles/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display%7CRubik" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        
+        <header includefile="header.html">
+        </header>
+        
+        <nav class="topnav" id="myTopnav">
+            <a href="/assignments/term-website/index.html" class="childnav">Home</a>
+            <a href="/assignments/term-website/adventure-tours.html" class="childnav">Adventure Tours</a>
+            <a href="/assignments/term-website/events.html" class="childnav">Events</a>
+            <a href="/assignments/term-website/shop-online.html" class="childnav">Shop Online</a>
+            <a href="/assignments/term-website/services.html" class="childnav">Services</a>
+            <a href="/assignments/term-website/contact-us.html" class="childnav">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+        </nav>
+        
+        <!--JS for to toggle the hamburger button-->
+        <script src="scripts/hamburger.js"></script>
+        
+        <!--JS for wayfinding-->
+        <script src="scripts/wayfinding.js"></script>
+        
+        <main>
+            <section class="banner-area">
+                <!--banner images-preferably banner slider-->
+                <figure>
+                    <img src="images/sunny-weather-opt.jpg" alt="sunny-weather" sizes="(max-width: 37.5em) 100vw, 50vw"
+                         srcset="images/sunny-weather-opt-200.jpg 200w,
+                                 images/sunny-weather-opt-500.jpg 500w,
+                                 images/sunny-weather-opt-800.jpg 800w,
+                                 images/sunny-weather-opt-orig.jpg 1100w">
+                </figure>
+            </section>
+            
+            <section class="online-shop">
+                <h1>Online Shop</h1>
+            </section>
+            
+            <div class="sales-grid">
+                <section class="sales-gallery">
+                    <figure>
+                        <img src="images/cloudy-gallery-opt.jpg" alt="cloudy-weather" sizes="(max-width: 37.5em) 100vw, 50vw"
+                             srcset="images/cloudy-gallery-opt-200.jpg 200w,
+                                     images/cloudy-gallery-opt-400.jpg 400w,
+                                     images/cloudy-gallery-opt.jpg 600w">
+                        <figcaption class="sales-item-details">
+                            <h1>Merida</h1>
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                            <h2 class="subhead">Matts 6.20-D - Hardtail 26"</h2>
+                            <h3>$200</h3>
+                            <ul>
+                                <li>Frame: MATTS SPEED</li>
+                                <li>Colour: matt-schwarz</li>
+                                <li>Headset: MERIDA 44 PSE Neck, Spacer 2x10mm</li>
+                                <li>Fork: Suntour XCT, Lockout hydraulisch, Federweg 100mm</li>
+                                <li>Brakes: Shimano ST-EF505 / RT10 Centerlock 160mm</li>
+                            </ul>
+                            <p class="link-button"><a href="#">View Item</a></p>
+                        </figcaption>
+                    </figure>                    
+                </section>
+                <section class="sales-gallery">
+                    <figure>
+                        <img src="images/partial-cloudy-gallery-opt.jpg" alt="partial-cloudy" sizes="(max-width: 37.5em) 100vw, 50vw"
+                             srcset="images/partial-cloudy-gallery-opt-200.jpg 200w,
+                                     images/partial-cloudy-gallery-opt-400.jpg 400w,
+                                     images/partial-cloudy-gallery-opt.jpg 600w">
+                        <figcaption class="sales-item-details">
+                            <h1>Radon</h1>
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                            <h2 class="subhead">Jealous AL 8.0 – Hardtail 27.5"</h2>
+                            <h3>$500</h3>
+                            <ul>
+                                <li>Frame: JEALOUS AL</li>
+                                <li>Colour: candy red / deep black glossy</li>
+                                <li>Headset: FSA, IS41/IS52</li>
+                                <li>Fork: Rock Shox Judy, Gold, Boost, RL, SA</li>
+                                <li>Brakes: Magura MT2</li>
+                            </ul>
+                            <p class="link-button"><a href="#">View Item</a></p>
+                        </figcaption>
+                    </figure>                    
+                </section>
+                <section class="sales-gallery">
+                    <figure>
+                        <img src="images/rainy-gallery-opt.jpg" alt="rainy" sizes="(max-width: 37.5em) 100vw, 50vw"
+                             srcset="images/rainy-gallery-opt-200.jpg 200w,
+                                     images/rainy-gallery-opt-400.jpg 400w,
+                                     images/rainy-gallery-opt.jpg 600w">
+                        <figcaption class="sales-item-details">
+                            <h1>Cube</h1>
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                            <h2 class="subhead">Aim Pro black´n´flashyellow – Hardtail 27.5"</h2>
+                            <h3>$250</h3>
+                            <ul>
+                                <li>Frame: Aluminium Lite, AMF, Internal Cable Routing, Easy Mount Kickstand Ready</li>
+                                <li>Colour: black´n´flashyellow</li>
+                                <li>Headset: CUBE No.10 Semi-Integrated</li>
+                                <li>Fork: SR Suntour XCT Coil Disc, 100mm</li>
+                                <li>Brakes: Tektro HD-M285, Hydr. Disc Brake (160/160)</li>
+                            </ul>
+                            <p class="link-button"><a href="#">View Item</a></p>
+                        </figcaption>
+                    </figure>                    
+                </section>
+                <section class="sales-gallery">
+                    <figure>
+                        <img src="images/storm-gallery-opt.jpg" alt="stormy" sizes="(max-width: 37.5em) 100vw, 50vw"
+                             srcset="images/storm-gallery-opt-200.jpg 200w,
+                                     images/storm-gallery-opt-400.jpg 400w,
+                                     images/storm-gallery-opt.jpg 600w">
+                        <figcaption class="sales-item-details">
+                            <h1>Fuji</h1>
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                            <h2 class="subhead">Addy 27.5 1.3 – Women's Hardtail"</h2>
+                            <h3>$200</h3>
+                            <ul>
+                                <li>Frame: Fuji A2-SL custom-butted alloy front triangle, Fuji A1-SL alloy rear triangle</li>
+                                <li>Colour: Fuchsia</li>
+                                <li>Headset: FSA NO. 10, 1 1/8'' semi-integrated, caged bearings</li>
+                                <li>Fork: SR Suntour SF15-XCM-RL-DS-27.5 w/ remote lockout, 100mm travel</li>
+                                <li>Brakes: Shimano M315, hydraulic disc, 180/160mm rotors</li>
+                            </ul>
+                            <p class="link-button"><a href="#">View Item</a></p>
+                        </figcaption>
+                    </figure>                    
+                </section>
+            </div>
+                    
+        </main>
+        
+        <footer includefile="footer.html">
+        </footer>
+        
+        <script src="scripts/include.js"></script>
+        <!--JS for to currentdate-->
+        <script src="scripts/currentdate.js"></script>
+        
+        <script src="scripts/rating.js"></script>
+        
+    </body>
+</html>

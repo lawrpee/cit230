@@ -660,8 +660,8 @@ h2.subhead {
 
 .site-footer {
     display: flex;
-    flex-direction: row nowrap;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    /*justify-content: center;*/
     background-color: #000;
 }
 

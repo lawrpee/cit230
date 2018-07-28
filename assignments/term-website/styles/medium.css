@@ -6,169 +6,40 @@
     
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
     
-    main {        
+    /*main {        
         background-color: #004B85;        
-    }
-        
-    .weather-image h2 {        
-        display: block;
-        margin: auto;
-        text-align: center;
-        color: #71C1FF;
-        font-size: 2em;       
-    }
-    
-    .weather-image img {        
-        margin: 0 0 0 0;
-        width: 60%;
-        min-height: 325px;
-        max-height: 325px;
-        float: left;    
-    }
-    
-    .weather-summary {        
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-    
-@media only screen and (max-width: 37.5em) {
-        .weather-summary {
-        min-height: 325px;
-        max-height: 325px 
-    }
-    }
-    
-    .current, .highlow, .conditions, .windchill {
-        width: 100%;
-        border: 3px solid white;
-        padding: 0.5rem;
-        background-color: #cf7600;
-    }
-    
-    .highlow p, .conditions p, .windchill p {
-        text-align: center;
-        line-height: 0.25px;
-        color: #fff;
-        font-size: 1.2em;
-    }
-    
-    .current {        
-        display: flex;
-        flex-flow: row-reverse wrap-reverse;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    
-    .current h3 {
-        color: #fff;
-        margin: 0;
-        align-self: center;
-    }
-    
-    .current p {
-        color: #fff;
-        font-size: 1.2em;
-        line-height: 0.25em;
-    }
-    
-    .current picture img {        
-        width: 100%;        
-    }
-    
-    .forecast h3 {        
-        text-align: center;
-        border: 1px solid black;
-        background-color: darkgray;
-        margin-bottom: 0px;        
-    }
-    
-    .forecast table {        
-        border-collapse: collapse;
-        margin: auto;
-        width: 100%;        
-    }
-    
-    .forecast table thead tr th, .forecast table tbody tr td {        
-        border: 1px solid black;
-        padding: 8px;
-        text-align: center;
-        background-color: lightgray;        
-    }
-    
-    article h3 {        
-        text-align: center;
-        color: #71C1FF;
-        font-size: 20px;        
-    }
-    
-    article img {
-        float: right;
-        width: 40%;
-        margin: 0px 20px 20px 20px;        
-    }
-    
-    article .town-article {        
-        margin: 0px 20px 20px 20px;
-        color: #71C1FF;        
-    }
-    
-    article {        
-        overflow: auto;         
-    }
+    }*/
 
 /*-----------------------MAIN HOME-----------------------*/
-    @media only screen and (max-width: 64em) {
-        .weather-story {
-            display: flex;
-            flex-direction: row;
-            padding: 2%;
-        }
-        
-        .weather-story .weather-story-heading {
-            width: 50%;
-            border: 2px solid #ffbe67;
-            border-radius: 10px 10px;
-            box-shadow: 2px 2px 15px #cf7600;
-        }
-        
-        .home-grid .home-gallery figure {
-            display: flex;
-            padding: 2%;
-        }
-        
-        .home-grid .home-gallery figure figcaption {
-            border: 2px solid #ffbe67;
-            border-radius: 10px 10px;
-            box-shadow: 2px 2px 15px #cf7600;
-        }
-        
-        .home-grid .home-gallery figure.second-city-card {
-            flex-direction: row-reverse;
-        }
-    }   
+
+    .banner-area figure {
+        width: 100%;
+        max-height: 630px;
+    }
     
-/*---------------------MAIN GALLERY---------------------*/
+    .banner-area figure img {
+        width: 100%;
+        max-height: 630px;
+    }
     
-    .gallery-grid {
+    .nav-cards {
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+    
+/*---------------------MAIN SALES---------------------*/
+    
+    .sales-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-gap: 10px;
+        margin: 2%;
     }
     
-/*---------------------FOOTER---------------------*/
-    
-    footer {        
-        position: static;
-        text-align: center;
-        background-color: #000000;
-        color: #ffffff;
-        padding-top: 10px;        
-    }
-    
-    footer .footer-bar {        
-        background-color: #000000;
-        color: #ffffff;
-        padding-top: 10px;        
+    .sales-gallery {
+        width: 60%;
+        display: block;
+        margin: auto;
     }
   }

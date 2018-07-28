@@ -5,11 +5,11 @@ CSS will use flexbox exlusively and CSS grid box*/
 
 body {
     font-size: 16px;
-    font-family: 'Rubik', sans-serif, 'Playfair Display', serif; /* Declare the base font-family */
+    font-family: 'Rubik', sans-serif; /* Declare the base font-family */
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-    max-width: 64em; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    max-width: auto; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
     margin: auto;
 }
 
@@ -18,14 +18,21 @@ header, nav, main, footer { /* the comma between the selectors means apply the f
 .site-header {
     display: flex;
     flex-direction: row;
-    background-color: #fff;
+    /*background-color: #fff;*/
 }
 
 .site-header picture.logo {
     align-self: center;
     flex: 0 1 auto;
-    margin: 2%;
-    padding: .25em;
+    margin: 0.25% 1% 0.25% 2%;
+    padding: 0.25em;
+    width: 90px;
+    height: 100px;
+}
+
+.site-header picture.logo img {
+    width: 90px;
+    height: 100px;
 }
 
 .headings {
@@ -170,10 +177,10 @@ figure {
     margin: 0;
 }
 
-.banner-area {
+/*.banner-area {
     display: flex;
     flex-direction: row;
-}
+}*/
 
 .tour-card, .buynow-card, .services-card {
     border: 2px solid #b89935;
@@ -249,12 +256,21 @@ figure {
     background-color: #485412;
 }
 
+.social-media-tabs h1 {
+    text-align: center;
+    color: #fff;
+}
+
 .article-recognition h1, .article-recognition p {
     color: #000;
 }
 
 article figure img {
     max-width: 100%;
+}
+
+.article-recognition figure img {
+        border-radius: 4px 10px;
 }
 
 .read-more a {
@@ -269,9 +285,13 @@ article figure img {
 
 /*---------------------MAIN ADVENTURE TOURS---------------------*/
 
+.daily-tours, .daily-tour-cards, .upcoming-tours, .annual-events, .annual-event-card {
+    margin: 2%;
+}
+
 .daily-tours h1, .upcoming-tours h1 {
     color: #000;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .daily-card h1 {
@@ -282,6 +302,10 @@ article figure img {
 .daily-card p {
     color: #000;
     font-size: 1em;
+}
+
+.daily-card img {
+    max-width: 40%;
 }
 
 .daily-card .link-button {
@@ -320,28 +344,35 @@ table .tour-info ul {
     padding: 0;
 }
 
-table .tour-info li {
-    font-size: 0.75em;
-}
-
 .bike-tour:hover {
     background-color: #ddc5a3;
+}
+
+.bike-tour td {
+    padding: 1% 2%;
 }
 
 .book-now a {
     text-decoration: none;
     color: #000;
+    border: 1px solid #b89935;
+    border-radius: 12px;
+    padding: 2%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.book-now a:hover {
+    background-color: #fff;
 }
 
 /*---------------------MAIN EVENTS---------------------*/
 
 .annual-events h1 {
     color: #000;
-    font-size: 1.5em;
-}
-
-.annual-events, .annual-event-card {
-    margin-left: 2%;
+    font-size: 2em;
 }
 
 .event-card h1 {
@@ -454,7 +485,12 @@ form label.top input:required:valid {
 }
 
 table .service-info {
-    width: 50%;
+    width: 35%;
+}
+
+td.service-fee {
+    width: 15%;
+    text-align: center;
 }
 
 table .service-info ul {
@@ -462,8 +498,8 @@ table .service-info ul {
     padding: 0;
 }
 
-table .service-info li {
-    font-size: 0.75em;
+.service-type td {
+    padding: 1% 2%;
 }
 
 .service-type:hover {
@@ -478,11 +514,12 @@ table .service-info li {
 
 .contact-teaser img {
     max-width: 100%;
+    border-radius: 4px 10px;
 }
 
 .contact-page h1 {
     color: #000;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .contact-teaser, .contact-details {
@@ -494,6 +531,8 @@ table .service-info li {
     font-size: 1em;
     border-top: 1px solid #b89935;
     border-bottom: 1px solid #b89935;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
 .contact-details h2 {
@@ -535,13 +574,12 @@ table .service-info li {
     .sales-grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 10px;
+        grid-gap: 15px;
     }
 }
 
 .sales-grid .sales-gallery figure {
     max-width: 100%;
-    margin: 2%;
     padding: 2%;
     border: 1px solid #b89935;
     border-radius: 4px;
@@ -556,8 +594,11 @@ table .service-info li {
 }
 
 .sales-grid .sales-gallery img {
+    border: 1px solid #b89935;
     border-radius: 4px 10px;
-    width: 100%;
+    width: 60%;
+    display: block;
+    margin: auto;
     height: 300px;
 }
 
@@ -629,4 +670,104 @@ h2.subhead {
     font-size: 0.75rem;
     margin-right: 1em;
     margin-left: 1em;
+}
+
+/*---------------------SLIDESHOW---------------------*/
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    max-height: 630px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    max-height: 630px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }

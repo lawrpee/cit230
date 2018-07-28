@@ -771,3 +771,16 @@ h2.subhead {
     from {opacity: .4} 
     to {opacity: 1}
 }
+
+/*---------------------VIDEO---------------------*/
+
+.video-page p {
+    text-align: center;
+}
+
+.video-page video {
+    width: 320px;
+    height: 240px;
+    display: block;
+    margin: auto;
+}
